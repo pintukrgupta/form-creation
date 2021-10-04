@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>form creating for personal details</title>
+	<style>
+body {
+  font-family: Arial;
+  background-color: lightblue;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 10px;
+  margin: 8px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* Add a blue text color to links */
+a {
+  color: blue;
+}
+
+</style>
+<script>
+	function validateForm()
+	{
+       var x = document.forms["myForm"]["fname"].value;
+       if(x=="" || x==null)
+       {
+       	alert("First name is required");
+       	return false;
+       }
+	}
+</script>
+</head>
+<body>
+	
+	<form name="myForm" action="welcome.php" onsubmit="return validateForm()" method="get" required>
+		<h1>Registration form</h1>
+	<p>Please fill the data for registration</p>
+	<hr>
+	<lable for="fname"><b>first name:</b></lable> <input type="text" id="fname"placeholder="Enter your first name">&nbsp&nbsp&nbsp
+	<lable for="lname"><b>last name:</b></lable>
+	 <input type="text" placeholder="Enter your last name"><br><br>
+	  <b>Email Id:</b><input type="text" placeholder="Enter your mail id">&nbsp&nbsp&nbsp&nbsp <b>select your gender</b><input type="radio" name="gender" id="male" value="male"><lable for="male">male</lable>&nbsp<input type="radio" name="gender" id="female" value="female"><lable for="female">female</lable>&nbsp<input type="radio" name="gender" id="other" value="other"><lable for="other">other</lable><br><br>
+	  	<b>password:</b><input type="password" placeholder="Enter your password"><br><br>
+       <b>Repeat Password :</b><input type="password" placeholder="Repeat password"><br><br>
+       <p>	I accept all the <a href="#"> terms & condition </a>.&nbsp <input type="radio" value="ok"></p><br>
+       	<button type="submit" class="submit">submit</button>
+       	 <center><p>Already have an account? <a href="#">Sign in</a>.</p></center>
+	</form>
+</body>
+</html>
