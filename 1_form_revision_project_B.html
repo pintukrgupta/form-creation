@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form project2</title>
+</head>
+<style>
+    h2{
+        background-color: rgb(228, 190, 163);
+        padding: 2px;
+        border: 2px solid black;
+    }
+    .abc{
+        background-color: rgb(218, 206, 206);
+        padding: 5px;
+    }
+</style>
+<body>
+    <h2>Basic of input type</h2>
+    <form action="action_page.php">
+        <div class="abc">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" value="Enter ur first name">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" value="Enter ur last name"><br><br>
+        <label for="MobNo.">Mob No</label>
+        <input type="number" id="MobNo" value="Enter Mob name"><br>
+         <p># The input type="checkbox" defines a checkbox: We can select 
+             multiple option using this.
+         </p>
+         <input type="checkbox" id="maths" value="maths">
+         <label for="subject1">I know Maths</label><br>
+         <input type="checkbox" id="hindi" value="Hindi">
+         <label for="subject2">I know Hindi</label><br>
+         <input type="checkbox" id="English" value="English">
+         <label for="subject3">I know English</label>
+         <p>use of Button input</p>
+         <input type="button" onclick="alert('This is pintu')" value="Click here">
+         <p>The input type="color" is used for input fields that should contain a color.</p>
+          <label for="favcolor">Select Your favorite color</label>
+          <input type="color" id="favorite" name="favcolor"><br><br>
+          <h3>Date Field Restrictions</h3>
+          <p>Use the min and max attributes to add restrictions to dates:</p>
+          <label for="datemax">Enter a date before 2000-01-01</label>
+          <input type="date" id="datemax" name="datemax" max="1999-12-31">
+          <label for="datemin">Enter a date after 2000-01-01</label>
+          <input type="date" id="datemin" name="datemin" min="2000-01-01"><br>
+          <h3>Input type Date</h3>
+          <p>The input type="date" is used for input fields that should contain a date.</p>
+           <label for="birthday">your birthday</label>
+           <input type="date" id="birthday" name="birthday"><br>
+           <h3>Input type date and time</h3>
+           <p>The input type="datetime-local" specifies a date and time input field, with no time zone.br </p>
+           <label for="dateTime">Enter your birthday date and time</label>
+         <input type="datetime-local" id="dateTime" name="dateTime"><br>
+        <h3>Email type</h3>
+        <label for="email">Enter your email</label>  
+         <input type="email" id="email" name="email"><br>
+
+      <input type="submit"> <input type="reset">
+    </div>
+    </form>
+    
+</body>
+</html>
